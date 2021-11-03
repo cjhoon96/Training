@@ -1,0 +1,52 @@
+header {
+    font-size:30px;
+    text-align:center;
+    border-bottom:7px solid gray;
+    margin:2px;
+    padding:20px;
+}
+
+section {
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-bottom: 100px;
+    padding: 20px;
+}
+
+footer {
+    border-top: 3px solid gray;
+}
+
+table {
+    text-align: center;
+    border-collapse: collapse;
+    margin: 50px;
+}
+
+th {
+    background-color: green;
+}
+
+th, td{
+    padding: 30px;
+}
+
+a {
+    font-size:30px;
+    color: rgb(0, 170, 37);
+    font-weight: bolder;
+    margin-left: 30px;
+}
+
+.login{
+    font-size: 30px;
+    font-weight: bolder;
+    border: 10px solid rgb(0, 170, 37);
+    margin:2px;
+    padding:20px;
+    display: inline-block;
+}
+
+.phone{
+    width: 30px;
+}
