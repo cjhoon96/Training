@@ -17,11 +17,19 @@
         $u_email = $_GET["u_email_box"];
         $u_phone = $_GET["u_phone_box"];
         $u_personalID = $_GET["u_personalID_box"];
-				$u_travel = $_GET["u_travel_box"];
-				$data = array($u_name, $u_addr, $u_email, $u_phone, $u_personalID, $u_travel)
+				$temp_u_travel = $_GET["u_travel_box"];
 
-		
+        if($temp_u_travel == "yes"){
+          $u_travel = 1;
+        } else{
+          $u_travel = 0;
+        }
         
+        $conn = mysqli_connect("localhost", "root", "", "member_db");
+
+        mysqli_query($conn, 
+                    "INSERT INTO member_t (u_name, u_phone, u_addr, u_email, u_personalID, u_travel)
+                    VALUES ('{$u_name}', '{$u_phone}', '{$u_addr}', '{$u_email}', '{$u_personalID}', '{$u_travel}')" );
         ?>
 
 
