@@ -1,4 +1,4 @@
-html>
+<html>
     <head>
         <meta charset="utf-8">
 				<link rel="stylesheet" href="style.css">
@@ -25,7 +25,7 @@ html>
         // 데이터베이스 접속
         $conn = mysqli_connect("localhost", "root", "", "temp_db");
 
-        $result = mysqli_query($conn, 
+        mysqli_query($conn, 
                                 "INSERT INTO temp_t (u_name, u_addr, u_phone)
                                 VALUES ('{$u_name}', '{$u_addr}', '{$u_phone}')" );
 
