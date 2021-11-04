@@ -26,8 +26,8 @@
         $conn = mysqli_connect("localhost", "root", "", "temp_db");
 
         mysqli_query($conn, 
-                                "INSERT INTO temp_t (u_name, u_addr, u_phone)
-                                VALUES ('{$u_name}', '{$u_addr}', '{$u_phone}')" );
+                    "INSERT INTO temp_t (u_name, u_addr, u_phone)
+                    VALUES ('{$u_name}', '{$u_addr}', '{$u_phone}')" );
 
         // $how_many = mysqli_num_rows($search_result);
 
